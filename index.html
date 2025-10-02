@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Affinity Hair Academy Orlando - Discover more about Affinity Hair Academy Orlando..">
+    
+    <meta name="keywords" content="Affinity Hair Academy Orlando">
+
+    <meta name="robots" content="index, follow">
+<link rel="canonical" href="https://affinityhairacademy.vercel.app/">
+      <link rel="icon" href="logo.webp" type="image/x-icon">
+<title>Affinity Hair Academy Orlando</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .bg-custom {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+        }
+        .heading h1 {
+            color: #000000;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .intro p {
+            color: #333;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .sub-section {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .sub-section h3 {
+            color: #2a5298;
+            text-align: center;
+        }
+        .sub-section p {
+            color: #666;
+        }
+        .footer {
+            color: #e0e0e0;
+        }
+        .footer a {
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: #ffffff;
+        }
+        .map-embed iframe {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 1100px;
+            height: 450px;
+        }
+        .toc {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+        .toc ul li {
+            margin: 10px 0;
+        }
+        .toc ul li a {
+            text-decoration: none;
+            color: #2a5298;
+            font-weight: bold;
+        }
+        .toc ul li a:hover {
+            text-decoration: underline;
+        }
+        .faq-item {
+            margin: 10px 0;
+        }
+        .faq-question {
+            cursor: pointer;
+            padding: 10px;
+            background: #f0f0f0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            background: #ffffff;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .faq-open .faq-answer {
+            display: block;
+        }
+        .upper-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #ffffff;
+        }
+        .brand-name {
+            color: black;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .menu-links {
+            display: flex;
+            align-items: center;
+        }
+        .menu-links a {
+            color: black;
+            margin-left: 15px;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        .menu-links a:hover {
+            text-decoration: underline;
+        }
+        .menu-links .contact-btn {
+            background-color: #ffc107;
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .menu-links .contact-btn:hover {
+            background-color: #ffca28;
+            text-decoration: none;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .full-section {
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+        }
+        .banner-container {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensures the image covers the area */
+}
+
+.map-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 16px;
+  background: #4285F4;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.map-btn:hover {
+  background: #3367D6;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+    </style>
+
+</head>
+<body class="bg-gray-100 text-gray-900 smooth-scroll">
+  <!-- Navbar (Non-Sticky) -->
+   <div class="upper-menu">
+    <div class="brand-name">
+        <a href="https://affinityhairacademy.vercel.app/">Affinity Hair Academy</a>
+    </div>
+    <div class="menu-links">
+        <a href="https://affinityhairacademy.vercel.app/">Home</a>
+        <div class="dropdown">
+            <a href="#services" class="dropbtn">Services ▼</a>
+            <div class="dropdown-content">
+              <ul>
+                <li><a href="https://affinityhairacademy.vercel.app/" class="text-blue-600 hover:underline">Affinity Hair Academy Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/best-cosmetology-school-in-orlando-fl.html" class="text-blue-600 hover:underline">Best cosmetology school in Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/gi-bill-cosmetology-school-in-orlando-fl.html" class="text-blue-600 hover:underline">Gi bill cosmetology school in Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/fafsa-cosmetology-school-in-orlando-fl.html" class="text-blue-600 hover:underline">Fafsa cosmetology school in Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/veterans-cosmetology-school-in-orlando-fl.html" class="text-blue-600 hover:underline">Veterans cosmetology school in Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/gi-bill-barber-school-in-orlando-fl.html" class="text-blue-600 hover:underline">Gi bill barber school in Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/fafsa-barber-school-in-orlando-fl.html" class="text-blue-600 hover:underline">Fafsa barber school in Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/veterans-barber-school-in-orlando-fl.html" class="text-blue-600 hover:underline">Veterans barber school in Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/gi-bill-hair-academy-school-in-orlando-fl.html" class="text-blue-600 hover:underline">Gi bill hair academy school in Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/fafsa-hair-academy-in-orlando-fl.html" class="text-blue-600 hover:underline">Fafsa hair academy in Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/veterans-hair-academy-in-orlando-fl.html" class="text-blue-600 hover:underline">Veterans hair academy in Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/beauty-school-that-offers-salon-services-in-orlando-fl.html" class="text-blue-600 hover:underline">Beauty school that offers salon services in Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/hair-salon-and-spa-academy-orlando-fl.html" class="text-blue-600 hover:underline">Hair salon and spa academy Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/barber-school-in-orlando-fl.html" class="text-blue-600 hover:underline">Barber school in Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-school-orlando-fl-cost.html" class="text-blue-600 hover:underline">Cosmetology school Orlando FL cost</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/affinity-hair-academy-cosmetology-school.html" class="text-blue-600 hover:underline">Affinity Hair Academy cosmetology school</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-school-orlando-fl.html" class="text-blue-600 hover:underline">Cosmetology school Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/accredited-cosmetology-program-florida.html" class="text-blue-600 hover:underline">Accredited cosmetology program Florida</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-enrollment-orlando.html" class="text-blue-600 hover:underline">Cosmetology enrollment Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-classes-orlando-fl.html" class="text-blue-600 hover:underline">Cosmetology classes Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/gi-bill-approved-beauty-school-orlando.html" class="text-blue-600 hover:underline">GI bill approved beauty school Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/fafsa-cosmetology-classes-orlando.html" class="text-blue-600 hover:underline">Fafsa cosmetology classes Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/licensed-cosmetology-school-orlando.html" class="text-blue-600 hover:underline">Licensed cosmetology school Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-financial-aid-orlando.html" class="text-blue-600 hover:underline">Cosmetology financial aid Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/military-benefits-cosmetology-orlando.html" class="text-blue-600 hover:underline">Military benefits cosmetology Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/mycaa-cosmetology-orlando.html" class="text-blue-600 hover:underline">MYCAA cosmetology Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/continuing-education-cosmetology-orlando.html" class="text-blue-600 hover:underline">Continuing education cosmetology Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/continuing-education-barbering-orlando.html" class="text-blue-600 hover:underline">Continuing education barbering Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/beauty-school-southchase-orlando.html" class="text-blue-600 hover:underline">Beauty school Southchase Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-school-near-southchase-orlando.html" class="text-blue-600 hover:underline">Cosmetology school near Southchase Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/student-salon-services-orlando.html" class="text-blue-600 hover:underline">Student salon services Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/salon-services-by-students-orlando-fl.html" class="text-blue-600 hover:underline">Salon services by students Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-training-hands-on-orlando.html" class="text-blue-600 hover:underline">Cosmetology training hands-on Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/hair-academy-orlando-fl.html" class="text-blue-600 hover:underline">Hair academy Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/orlando-hairdresser-school.html" class="text-blue-600 hover:underline">Orlando hairdresser school</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/hair-styling-school-orlando-fl.html" class="text-blue-600 hover:underline">Hair styling school Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/haircut-training-orlando-cosmetology.html" class="text-blue-600 hover:underline">Haircut training Orlando cosmetology</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/hair-color-training-orlando.html" class="text-blue-600 hover:underline">Hair color training Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-instructor-orlando.html" class="text-blue-600 hover:underline">Cosmetology instructor Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-career-programs-orlando.html" class="text-blue-600 hover:underline">Cosmetology career programs Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-apprenticeship-orlando-fl.html" class="text-blue-600 hover:underline">Cosmetology apprenticeship Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/affordable-cosmetology-school-orlando.html" class="text-blue-600 hover:underline">Affordable cosmetology school Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/private-cosmetology-school-orlando.html" class="text-blue-600 hover:underline">Private cosmetology school Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/top-cosmetology-programs-orlando-fl.html" class="text-blue-600 hover:underline">Top cosmetology programs Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/esthetician-training-orlando-fl.html" class="text-blue-600 hover:underline">Esthetician training Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/skin-care-school-orlando.html" class="text-blue-600 hover:underline">Skin care school Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/professional-makeup-training-orlando-fl.html" class="text-blue-600 hover:underline">Professional makeup training Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/makeup-artist-school-orlando.html" class="text-blue-600 hover:underline">Makeup artist school Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/advanced-nail-courses-orlando-fl.html" class="text-blue-600 hover:underline">Advanced nail courses Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/nail-art-training-orlando.html" class="text-blue-600 hover:underline">Nail art training Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/salon-management-courses-orlando.html" class="text-blue-600 hover:underline">Salon management courses Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/beauty-institute-orlando-fl.html" class="text-blue-600 hover:underline">Beauty institute Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-diploma-orlando-fl.html" class="text-blue-600 hover:underline">Cosmetology diploma Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/barber-academy-orlando-fl.html" class="text-blue-600 hover:underline">Barber academy Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/barbering-apprenticeship-orlando.html" class="text-blue-600 hover:underline">Barbering apprenticeship Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/accredited-barber-schools-florida.html" class="text-blue-600 hover:underline">Accredited barber schools Florida</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-classes-with-fafsa-orlando.html" class="text-blue-600 hover:underline">Cosmetology classes with FAFSA Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/gi-bill-approved-beauty-school-orlando.html" class="text-blue-600 hover:underline">GI Bill approved beauty school Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/federal-school-code-042952-cosmetology.html" class="text-blue-600 hover:underline">Federal school code 042952 cosmetology</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/enroll-cosmetology-orlando-fl.html" class="text-blue-600 hover:underline">Enroll cosmetology Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/apply-for-fafsa-cosmetology-orlando.html" class="text-blue-600 hover:underline">Apply for FAFSA cosmetology Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-school-phone-407-613-5972.html" class="text-blue-600 hover:underline">Cosmetology school phone 407-613-5972</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-school-address-orlando-12313-south-orange-trail.html" class="text-blue-600 hover:underline">Cosmetology school address Orlando 12313 South Orange Trail</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/beauty-school-job-placement-orlando.html" class="text-blue-600 hover:underline">Beauty school job placement Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/student-beauty-clinic-orlando-fl.html" class="text-blue-600 hover:underline">Student beauty clinic Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/hands-on-barber-training-orlando.html" class="text-blue-600 hover:underline">Hands-on barber training Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-skills-training-orlando.html" class="text-blue-600 hover:underline">Cosmetology skills training Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/beauty-career-training-orlando-fl.html" class="text-blue-600 hover:underline">Beauty career training Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-exam-prep-orlando.html" class="text-blue-600 hover:underline">Cosmetology exam prep Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/barber-licensure-prep-orlando-fl.html" class="text-blue-600 hover:underline">Barber licensure prep Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/nail-tech-licensure-orlando.html" class="text-blue-600 hover:underline">Nail tech licensure Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/full-specialist-training-nail-skincare-orlando.html" class="text-blue-600 hover:underline">Full specialist training nail skincare Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-products-training-orlando.html" class="text-blue-600 hover:underline">Cosmetology products training Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/salon-floor-experience-orlando-cosmetology.html" class="text-blue-600 hover:underline">Salon floor experience Orlando cosmetology</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/beauty-school-testimonials-orlando.html" class="text-blue-600 hover:underline">Beauty school testimonials Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/enroll-now-cosmetology-orlando.html" class="text-blue-600 hover:underline">Enroll now cosmetology Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-schedules-orlando-fl.html" class="text-blue-600 hover:underline">Cosmetology schedules Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/evening-cosmetology-classes-orlando.html" class="text-blue-600 hover:underline">Evening cosmetology classes Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/weekend-cosmetology-classes-orlando.html" class="text-blue-600 hover:underline">Weekend cosmetology classes Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/financial-aid-cosmetology-orlando-fl.html" class="text-blue-600 hover:underline">Financial aid cosmetology Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/veteran-benefits-barber-school-orlando.html" class="text-blue-600 hover:underline">Veteran benefits barber school Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/beauty-school-for-military-orlando-fl.html" class="text-blue-600 hover:underline">Beauty school for military Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-program-length-orlando.html" class="text-blue-600 hover:underline">Cosmetology program length Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-tuition-orlando-fl.html" class="text-blue-600 hover:underline">Cosmetology tuition Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-payment-plans-orlando.html" class="text-blue-600 hover:underline">Cosmetology payment plans Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/student-kit-cosmetology-orlando.html" class="text-blue-600 hover:underline">Student kit cosmetology Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-workshops-orlando-fl.html" class="text-blue-600 hover:underline">Cosmetology workshops Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/barber-workshops-orlando.html" class="text-blue-600 hover:underline">Barber workshops Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/nail-tech-workshops-orlando.html" class="text-blue-600 hover:underline">Nail tech workshops Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-refresher-courses-orlando.html" class="text-blue-600 hover:underline">Cosmetology refresher courses Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/beauty-school-continuing-education-orlando.html" class="text-blue-600 hover:underline">Beauty school continuing education Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-practical-training-orlando-fl.html" class="text-blue-600 hover:underline">Cosmetology practical training Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/barber-practical-training-orlando-fl.html" class="text-blue-600 hover:underline">Barber practical training Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-and-barbering-school-orlando.html" class="text-blue-600 hover:underline">Cosmetology and barbering school Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/best-beauty-school-near-me-orlando.html" class="text-blue-600 hover:underline">Best beauty school near me Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/orlando-cosmetology-school-reviews.html" class="text-blue-600 hover:underline">Orlando cosmetology school reviews</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/cosmetology-school-accreditation-florida.html" class="text-blue-600 hover:underline">Cosmetology school accreditation Florida</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/career-in-cosmetology-orlando-fl.html" class="text-blue-600 hover:underline">Career in cosmetology Orlando FL</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/start-cosmetology-career-orlando.html" class="text-blue-600 hover:underline">Start cosmetology career Orlando</a></li>
+<li><a href="https://affinityhairacademy.vercel.app/enroll-gi-bill-cosmetology-orlando.html" class="text-blue-600 hover:underline">Enroll GI Bill cosmetology Orlando</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <a href="http://affinityhairacademy.com" class="contact-btn">Contact Us</a>
+    </div>
+</div>
+
+
+
+
+  <!-- Hero Section -->
+       <section id="home" class="bg-cover bg-center h-96" style="background-image: url('')">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white bg-black bg-opacity-50 p-4 rounded-lg">
+<h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3">Affinity Hair Academy Orlando</h1>
+      
+    </div>
+  </section>
+
+  
+  <!-- Introduction Section -->
+  <section id="introduction" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <p class="text-gray-800 mb-4">Affinity Hair Academy in Orlando is a trusted destination for anyone looking to refine their hairstyling skills or start a rewarding career in cosmetology. Located conveniently on S Orange Blossom Trl, the academy offers hands-on training in cutting-edge techniques, from classic cuts to modern coloring methods. Their approach combines classroom learning with real-world salon experience, ensuring students graduate with confidence and expertise. Whether you're a beginner or an experienced stylist looking to elevate your craft, Affinity Hair Academy provides a supportive environment where creativity thrives and skills flourish.</p>
+<p class="text-gray-800 mb-4">What sets Affinity Hair Academy apart is its team of seasoned instructors who bring years of industry experience to the classroom. These professionals don’t just teach textbook concepts—they share insider tips, trends, and practical knowledge gained from working in top salons. Students learn everything from precision haircuts to advanced balayage techniques, all while building a strong foundation in client communication and salon management. This real-world expertise ensures graduates leave not just with a certificate but with the skills to succeed in a competitive industry.</p>
+<p class="text-gray-800 mb-4">At Affinity Hair Academy Orlando, the focus is always on the student’s success and satisfaction. The academy takes pride in fostering a welcoming, inclusive environment where each individual receives personalized attention and mentorship. Beyond technical training, students gain insights into building a loyal clientele and staying ahead of industry trends. Conveniently situated on S Orange Blossom Trl, the academy makes professional education accessible without compromising on quality. Whether you dream of owning a salon or working with high-profile clients, Affinity Hair Academy provides the tools and guidance to turn that dream into reality.</p>
+
+
+
+ <br>
+<!-- IF_LINK_WHEEL_START -->
+
+
+<h3 class='text-2xl font-semibold mb-4'>Check our other pages :</h3>
+
+
+<a href='https://affinityhairacademy.vercel.app/cosmetology-skills-training-orlando.html' class='text-blue-600 hover:underline'>Cosmetology skills training Orlando</a><br><a href='https://affinityhairacademy.vercel.app/cosmetology-school-accreditation-florida.html' class='text-blue-600 hover:underline'>Cosmetology school accreditation Florida</a><br><a href='https://affinityhairacademy.vercel.app/makeup-artist-school-orlando.html' class='text-blue-600 hover:underline'>Makeup artist school Orlando</a><br>
+<!-- IF_LINK_WHEEL_END -->
+    </div>
+  </section>
+
+
+      <!-- Content with Images Section -->
+  <section id="content-images" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     
+
+      <!-- Content 1: -->
+      <div class="flex flex-col md:flex-row-reverse items-center mb-12">
+<div class="w-full p-6">
+  
+  <h3 class='text-2xl font-semibold mb-4'>Why Affinity Hair Academy Stands Out in Orlando</h3>
+<p class="text-gray-800 mb-4">Affinity Hair Academy Orlando has built a strong reputation as a trusted name in beauty education, setting itself apart as a premier choice for aspiring cosmetologists. Unlike generic beauty schools, Affinity Hair Academy focuses on hands-on training with real-world applications, ensuring students graduate with confidence and marketable skills. The academy’s commitment to excellence is reflected in its status as an accredited cosmetology school, meeting rigorous industry standards. Students benefit from experienced instructors who bring years of professional expertise into the classroom, creating a learning environment that blends creativity with technical precision. This dedication to quality education has made Affinity Hair Academy a respected institution in Orlando’s competitive beauty scene.</p>
+<p class="text-gray-800 mb-4">One of the key advantages of Affinity Hair Academy is its prime location on South Orange Blossom Trail, placing students at the heart of Orlando’s thriving beauty hub. Being situated in such a dynamic area means students have access to networking opportunities, internships, and exposure to diverse clientele. The academy’s proximity to salons, spas, and industry events allows students to connect with professionals and stay updated on the latest trends. This strategic location also makes it convenient for students commuting from different parts of Orlando, ensuring accessibility without sacrificing quality. Affinity Hair Academy leverages its surroundings to provide a well-rounded education that extends beyond the classroom.</p>
+<p class="text-gray-800 mb-4">What truly sets Affinity Hair Academy apart is its career-focused training, designed to prepare students for success in the beauty industry from day one. The curriculum goes beyond basic techniques, covering advanced styling, business management, and client relations to give graduates a competitive edge. Students receive personalized attention in small class settings, allowing for tailored instruction that caters to individual learning styles. The academy also offers opportunities to work with real clients in a salon-like environment, bridging the gap between theory and practice. This practical approach ensures that graduates leave not just with a license but with the confidence to excel in their careers.</p>
+<p class="text-gray-800 mb-4">Affinity Hair Academy Orlando stands out by fostering a culture of innovation and creativity, encouraging students to push boundaries in their craft. The academy stays ahead of industry trends, incorporating modern techniques like balayage, keratin treatments, and sustainable hair care into its programs. Students gain exposure to cutting-edge tools and products, preparing them to meet the demands of today’s beauty market. The emphasis on creativity is balanced with a strong foundation in fundamentals, ensuring versatility in skill sets. This forward-thinking approach makes Affinity Hair Academy a top choice for those looking to thrive in an ever-evolving industry.</p>
+<p class="text-gray-800 mb-4">Beyond technical training, Affinity Hair Academy prioritizes student success through ongoing support and career development resources. Graduates benefit from job placement assistance, resume workshops, and connections to local salons, giving them a head start in their professional journeys. The academy’s alumni network serves as a valuable resource, offering mentorship and collaboration opportunities long after graduation. By focusing on both education and career readiness, Affinity Hair Academy ensures students are equipped for long-term success. It’s this holistic approach that solidifies its reputation as a leader in beauty education in Orlando.</p>
+
+  
+        </div>
+      
+      </div>
+
+      <!-- Content 2: -->
+      <div class="flex flex-col md:flex-row-reverse items-center mb-12">
+<div class="w-full p-6">
+  
+  <h3 class='text-2xl font-semibold mb-4'>Programs and Services We Offer</h3>
+<p class="text-gray-800 mb-4">At Affinity Hair Academy Orlando, our <a href="http://affinityhairacademy.com
+" style="color:blue;">cosmetology program</a>provides comprehensive training for aspiring beauty professionals. Students learn cutting-edge techniques in hair styling, coloring, and chemical treatments while gaining hands-on experience in our professional salon environment. The curriculum covers everything from basic haircuts to advanced balayage and keratin treatments, preparing graduates for Florida state licensure. Our instructors bring years of industry experience, ensuring students receive personalized guidance in mastering both technical skills and client relations. Located conveniently on S Orange Blossom Trl, our academy offers flexible scheduling options to accommodate diverse learning needs.</p>
+<p class="text-gray-800 mb-4">For those interested in barbering, our barbering course combines traditional techniques with modern trends to create versatile professionals. Students train with clippers, straight razors, and shears while learning beard grooming, facial treatments, and classic scissor cuts. The program emphasizes sanitation practices and business skills essential for success in barbershops or solo practices. Affinity Hair Academy’s barbering students benefit from working with real clients in our on-site clinic, building confidence before entering the workforce. This practical approach ensures graduates leave ready to excel in Orlando’s thriving grooming industry.</p>
+<p class="text-gray-800 mb-4">Our nail technician training program transforms students into skilled professionals capable of delivering salon-quality manicures, pedicures, and nail enhancements. The curriculum covers acrylics, gels, dip powders, and intricate nail art designs using the latest products and equipment. Students practice infection control standards and learn about nail health to provide safe, beautiful services. Affinity Hair Academy’s small class sizes allow for focused attention on perfecting techniques like sculpting and nail repairs. Many graduates secure positions at Orlando’s top spas or launch successful mobile nail businesses.</p>
+<p class="text-gray-800 mb-4">Beyond education, Affinity Hair Academy Orlando operates a full-service salon open to the public at our S Orange Blossom Trl location. Clients enjoy affordable luxury services performed by supervised students, including precision haircuts, vibrant color services, and relaxing facials. Our salon provides the perfect environment for students to refine their craft while offering the community access to high-quality beauty treatments. Services range from basic trims to elaborate bridal styling, with all proceeds supporting the academy’s educational programs. It’s a unique opportunity to receive professional care while helping the next generation of beauty experts.</p>
+<p class="text-gray-800 mb-4">The skincare program at Affinity Hair Academy prepares students for careers in medical spas, resorts, and dermatology offices through intensive esthetics training. Participants master facials, chemical peels, microdermabrasion, and hair removal techniques using professional-grade equipment. The course includes product knowledge and customized treatment planning to address various skin concerns. Our Orlando location’s clinic allows students to practice on diverse clientele under licensed instructors’ supervision. Whether pursuing cosmetology, barbering, nails, or skincare, Affinity Hair Academy provides the tools for lasting success in Central Florida’s competitive beauty industry.</p>
+
+  
+        </div>
+      
+      </div>
+
+ <!-- Driving directions-->
+<section id="content-images" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold mb-12 text-center">
+ Driving Directions</h2>
+
+    <!-- Content 1: Text Left, Image Right -->
+   <div class="flex flex-col md:flex-row items-center mb-12">
+      <div class="md:w-1/2 p-6">
+        <h3 class="text-2xl font-semibold mb-4 text-center -mt-4">
+          United States Postal Service to Affinity Hair Academy
+        </h3>
+        <div style="position: relative; max-width: 100%; height: 450px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d5265.057816011902!2d-81.40434922317739!3d28.387903775799316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x88dd877ab7494aa7%3A0x6f6680253ca765a7!2sUnited%20States%20Postal%20Service!3m2!1d28.388823799999997!2d-81.40112359999999!4m5!1s0x88e77e78d25b4f8d%3A0x81500ccbb4ecce4c!2sAffinity%20Hair%20Academy%20School%20of%20Cosmetology%20%26%20Barber%2C%2012313%20S%20Orange%20Blossom%20Trl%2C%20Orlando%2C%20FL%2032837!3m2!1d28.3869838!2d-81.402069!5e1!3m2!1sen!2sus!4v1758640569829!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div style="position:absolute; top:100px; left:10px; background:rgba(255,255,0,0.7); padding:5px; z-index:10;">
+  <strong>Best Cosmetology School in Orlando, FL</strong>
+</div>
+          
+          <!-- Button -->
+          <div style="position: absolute; bottom: 20px; left: 20px;">
+            <a href="https://www.google.com/maps/dir/United+States+Postal+Service/Affinity+Hair+Academy+School+of+Cosmetology+%26+Barber,+12313+S+Orange+Blossom+Trl,+Orlando,+FL+32837/@28.3879038,-81.4043492,1209m/am=t/data=!3m1!1e3!4m14!4m13!1m5!1m1!1s0x88dd877ab7494aa7:0x6f6680253ca765a7!2m2!1d-81.4011236!2d28.3888238!1m5!1m1!1s0x88e77e78d25b4f8d:0x81500ccbb4ecce4c!2m2!1d-81.402069!2d28.3869838!3e0!5m1!1e1?entry=tts&g_ep=EgoyMDI1MDkxNy4wIPu8ASoASAFQAw%3D%3D&skid=2d298beb-522f-4e1d-8ef6-73346414bdb1" target="_blank" class="map-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="22" height="22" style="vertical-align:middle; margin-right:8px;">
+                <path fill="#4CAF50" d="M21 44.74V28.99h6v15.75l-3 2.25z"/>
+                <path fill="#81C784" d="M24 2L12 12h24z"/>
+                <path fill="#E53935" d="M12 12L24 2v10z"/>
+                <path fill="#1E88E5" d="M36 12L24 2v10z"/>
+                <path fill="#FBC02D" d="M24 22c-5.52 0-10-4.48-10-10S18.48 2 24 2s10 4.48 10 10-4.48 10-10 10z"/>
+              </svg>
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content 2 -->
+      <div class="md:w-1/2 p-6">
+        <h3 class="text-2xl font-semibold mb-4 text-center -mt-4">
+         SouthState Bank to Affinity Hair Academy
+        </h3>
+        <div style="position: relative; max-width: 100%; height: 450px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m8!1m3!1d5265.080136018345!2d-81.40559917450815!3d28.38745432579943!3m2!1i1024!2i768!4f13.1!4m12!3e0!4m4!1s0x88dd87684f9219a9%3A0x76ee5e1a5e007936!3m2!1d28.387753999999997!2d-81.40397949999999!4m5!1s0x88e77e78d25b4f8d%3A0x81500ccbb4ecce4c!2sAffinity%20Hair%20Academy%20School%20of%20Cosmetology%20%26%20Barber%2C%2012313%20S%20Orange%20Blossom%20Trl%2C%20Orlando%2C%20FL%2032837!3m2!1d28.3869838!2d-81.402069!5e1!3m2!1sen!2s!4v1758641708958!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         
+         <div style="position:absolute; top:140px; left:10px; background:rgba(255,255,0,0.7); padding:5px; z-index:10;">
+  <strong>GI Bill Cosmetology School in Orlando, FL</strong>
+</div>
+
+          <!-- Button -->
+          <div style="position: absolute; bottom: 20px; left: 20px;">
+            <a href="https://www.google.com/maps/dir/''/Affinity+Hair+Academy+School+of+Cosmetology+%26+Barber,+12313+S+Orange+Blossom+Trl,+Orlando,+FL+32837/@28.3874543,-81.4055992,1209m/am=t/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x88dd87684f9219a9:0x76ee5e1a5e007936!2m2!1d-81.4039795!2d28.387754!1m5!1m1!1s0x88e77e78d25b4f8d:0x81500ccbb4ecce4c!2m2!1d-81.402069!2d28.3869838!3e0!5m1!1e1?entry=tts&g_ep=EgoyMDI1MDkxNy4wIPu8ASoASAFQAw%3D%3D&skid=9c566335-6e38-4b5d-b5d6-62b4dd054311" target="_blank" class="map-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="22" height="22" style="vertical-align:middle; margin-right:8px;">
+                <path fill="#4CAF50" d="M21 44.74V28.99h6v15.75l-3 2.25z"/>
+                <path fill="#81C784" d="M24 2L12 12h24z"/>
+                <path fill="#E53935" d="M12 12L24 2v10z"/>
+                <path fill="#1E88E5" d="M36 12L24 2v10z"/>
+                <path fill="#FBC02D" d="M24 22c-5.52 0-10-4.48-10-10S18.48 2 24 2s10 4.48 10 10-4.48 10-10 10z"/>
+              </svg>
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <!-- Content 2: Text Left, Image Right -->
+    <div class="flex flex-col md:flex-row items-center mb-12">
+      <div class="md:w-1/2 p-6">
+        <h3 class="text-2xl font-semibold mb-4 text-center -mt-4">
+          Alan's Burgers to Affinity Hair Academy
+        </h3>
+        <div style="position: relative; max-width: 100%; height: 450px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d5264.979592869252!2d-81.40566632450806!3d28.38947887579835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x88dd8767bd9cfcbd%3A0x9f7074d1a37eaf98!2sAlan&#39;s%20Burgers!3m2!1d28.391973999999998!2d-81.4041127!4m5!1s0x88e77e78d25b4f8d%3A0x81500ccbb4ecce4c!2sAffinity%20Hair%20Academy%20School%20of%20Cosmetology%20%26%20Barber%2C%2012313%20S%20Orange%20Blossom%20Trl%2C%20Orlando%2C%20FL%2032837!3m2!1d28.3869838!2d-81.402069!5e1!3m2!1sen!2s!4v1758641913824!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+<div style="position:absolute; top:100px; left:10px; background:rgba(255,255,0,0.7); padding:5px; z-index:10;">
+  <strong>FAFSA Cosmetology School in Orlando, FL</strong>
+</div>
+          
+          <!-- Button -->
+          <div style="position: absolute; bottom: 20px; left: 20px;">
+            <a href="https://www.google.com/maps/dir/Alan's+Burgers/Affinity+Hair+Academy+School+of+Cosmetology+%26+Barber,+12313+S+Orange+Blossom+Trl,+Orlando,+FL+32837/@28.3894789,-81.4056663,1209m/am=t/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x88dd8767bd9cfcbd:0x9f7074d1a37eaf98!2m2!1d-81.4041127!2d28.391974!1m5!1m1!1s0x88e77e78d25b4f8d:0x81500ccbb4ecce4c!2m2!1d-81.402069!2d28.3869838!3e0!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="22" height="22" style="vertical-align:middle; margin-right:8px;">
+                <path fill="#4CAF50" d="M21 44.74V28.99h6v15.75l-3 2.25z"/>
+                <path fill="#81C784" d="M24 2L12 12h24z"/>
+                <path fill="#E53935" d="M12 12L24 2v10z"/>
+                <path fill="#1E88E5" d="M36 12L24 2v10z"/>
+                <path fill="#FBC02D" d="M24 22c-5.52 0-10-4.48-10-10S18.48 2 24 2s10 4.48 10 10-4.48 10-10 10z"/>
+              </svg>
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content 2 -->
+      <div class="md:w-1/2 p-6">
+        <h3 class="text-2xl font-semibold mb-4 text-center -mt-4">
+         Grande Lakes-Orlando to Affinity Hair Academy
+        </h3>
+        <div style="position: relative; max-width: 100%; height: 450px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d21058.638290823958!2d-81.42558707299746!3d28.395921962714585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x88e77e06dc0bcd8d%3A0xfa0902964e465e65!2sGrande%20Lakes-Orlando!3m2!1d28.4032071!2d-81.42844319999999!4m5!1s0x88e77e78d25b4f8d%3A0x81500ccbb4ecce4c!2sAffinity%20Hair%20Academy%20School%20of%20Cosmetology%20%26%20Barber%2C%2012313%20S%20Orange%20Blossom%20Trl%2C%20Orlando%2C%20FL%2032837!3m2!1d28.3869838!2d-81.402069!5e1!3m2!1sen!2s!4v1758643355909!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+<div style="position:absolute; top:100px; left:10px; background:rgba(255,255,0,0.7); padding:5px; z-index:10;">
+  <strong>Veterans Cosmetology School in Orlando, FL</strong>
+</div>
+          
+          <!-- Button -->
+          <div style="position: absolute; bottom: 20px; left: 20px;">
+            <a href="https://maps.app.goo.gl/myJtDSboAs5CzT1Z8" target="_blank" class="map-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="22" height="22" style="vertical-align:middle; margin-right:8px;">
+                <path fill="#4CAF50" d="M21 44.74V28.99h6v15.75l-3 2.25z"/>
+                <path fill="#81C784" d="M24 2L12 12h24z"/>
+                <path fill="#E53935" d="M12 12L24 2v10z"/>
+                <path fill="#1E88E5" d="M36 12L24 2v10z"/>
+                <path fill="#FBC02D" d="M24 22c-5.52 0-10-4.48-10-10S18.48 2 24 2s10 4.48 10 10-4.48 10-10 10z"/>
+              </svg>
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Content 3: Text Left, Image Right -->
+    <div class="flex flex-col md:flex-row items-center mb-12">
+      <div class="md:w-1/2 p-6">
+        <h3 class="text-2xl font-semibold mb-4 text-center -mt-4">
+         1470-1400 Welson Rd to Affinity Hair Academy
+        </h3>
+        <div style="position: relative; max-width: 100%; height: 450px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d5269.628050997193!2d-81.40202488772385!3d28.387906345044286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d28.3880834!2d-81.3962808!4m5!1s0x88e77e78d25b4f8d%3A0x81500ccbb4ecce4c!2sAffinity%20Hair%20Academy%20School%20of%20Cosmetology%20%26%20Barber%2C%2012313%20S%20Orange%20Blossom%20Trl%2C%20Orlando%2C%20FL%2032837%2C%20United%20States!3m2!1d28.3869838!2d-81.402069!5e1!3m2!1sen!2s!4v1758746491426!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       
+<div style="position:absolute; top:100px; left:10px; background:rgba(255,255,0,0.7); padding:5px; z-index:10;">
+  <strong>GI Bill Barber School in Orlando, FL</strong>
+</div>
+          
+          <!-- Button -->
+          <div style="position: absolute; bottom: 20px; left: 20px;">
+            <a href="https://maps.app.goo.gl/YMvJybX1wehyVxBo9" target="_blank" class="map-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="22" height="22" style="vertical-align:middle; margin-right:8px;">
+                <path fill="#4CAF50" d="M21 44.74V28.99h6v15.75l-3 2.25z"/>
+                <path fill="#81C784" d="M24 2L12 12h24z"/>
+                <path fill="#E53935" d="M12 12L24 2v10z"/>
+                <path fill="#1E88E5" d="M36 12L24 2v10z"/>
+                <path fill="#FBC02D" d="M24 22c-5.52 0-10-4.48-10-10S18.48 2 24 2s10 4.48 10 10-4.48 10-10 10z"/>
+              </svg>
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content 2 -->
+      <div class="md:w-1/2 p-6">
+        <h3 class="text-2xl font-semibold mb-4 text-center -mt-4">
+          Starling Chevrolet to Affinity Hair Academy
+        </h3>
+        <div style="position: relative; max-width: 100%; height: 450px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d10539.942455434695!2d-81.40641068075234!3d28.38100119212464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x88dd8698255eed77%3A0x46b7283864c730a7!2sStarling%20Chevrolet!3m2!1d28.373164199999998!2d-81.4028568!4m5!1s0x88e77e78d25b4f8d%3A0x81500ccbb4ecce4c!2sAffinity%20Hair%20Academy%20School%20of%20Cosmetology%20%26%20Barber%2C%2012313%20S%20Orange%20Blossom%20Trl%2C%20Orlando%2C%20FL%2032837%2C%20United%20States!3m2!1d28.3869838!2d-81.402069!5e1!3m2!1sen!2s!4v1758746546237!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+<div style="position:absolute; top:100px; left:10px; background:rgba(255,255,0,0.7); padding:5px; z-index:10;">
+  <strong>FAFSA Barber School in Orlando, FL</strong>
+</div>
+          
+          
+          <!-- Button -->
+          <div style="position: absolute; bottom: 20px; left: 20px;">
+            <a href="https://maps.app.goo.gl/J9ZD9zJesHP9PaZR9" target="_blank" class="map-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="22" height="22" style="vertical-align:middle; margin-right:8px;">
+                <path fill="#4CAF50" d="M21 44.74V28.99h6v15.75l-3 2.25z"/>
+                <path fill="#81C784" d="M24 2L12 12h24z"/>
+                <path fill="#E53935" d="M12 12L24 2v10z"/>
+                <path fill="#1E88E5" d="M36 12L24 2v10z"/>
+                <path fill="#FBC02D" d="M24 22c-5.52 0-10-4.48-10-10S18.48 2 24 2s10 4.48 10 10-4.48 10-10 10z"/>
+              </svg>
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- Content 4: Text Left, Image Right -->
+    <div class="flex flex-col md:flex-row items-center mb-12">
+      <div class="md:w-1/2 p-6">
+        <h3 class="text-2xl font-semibold mb-4 text-center -mt-4">
+         All 4 You Pavers to Affinity Hair Academy
+        </h3>
+        <div style="position: relative; max-width: 100%; height: 450px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d21063.134095253776!2d-81.40957952300614!3d28.373287112914994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x88dd87b89f412d49%3A0xec2c331c2c6d18aa!2sAll%204%20You%20Pavers%2C%201823%20Derby%20Glen%20Dr%2C%20Orlando%2C%20FL%2032837%2C%20United%20States!3m2!1d28.359365999999998!2d-81.394132!4m5!1s0x88e77e78d25b4f8d%3A0x81500ccbb4ecce4c!2sAffinity%20Hair%20Academy%20School%20of%20Cosmetology%20%26%20Barber%2C%20South%20Orange%20Blossom%20Trail%2C%20Orlando%2C%20FL%2C%20USA!3m2!1d28.3869838!2d-81.402069!5e1!3m2!1sen!2s!4v1758953491527!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+<div style="position:absolute; top:100px; left:10px; background:rgba(255,255,0,0.7); padding:5px; z-index:10;">
+  <strong>Veterans Barber School in Orlando, FL</strong>
+</div>
+          
+          <!-- Button -->
+          <div style="position: absolute; bottom: 20px; left: 20px;">
+            <a href="https://maps.app.goo.gl/1NbhHJSh8RR2LqHFA" target="_blank" class="map-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="22" height="22" style="vertical-align:middle; margin-right:8px;">
+                <path fill="#4CAF50" d="M21 44.74V28.99h6v15.75l-3 2.25z"/>
+                <path fill="#81C784" d="M24 2L12 12h24z"/>
+                <path fill="#E53935" d="M12 12L24 2v10z"/>
+                <path fill="#1E88E5" d="M36 12L24 2v10z"/>
+                <path fill="#FBC02D" d="M24 22c-5.52 0-10-4.48-10-10S18.48 2 24 2s10 4.48 10 10-4.48 10-10 10z"/>
+              </svg>
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content 2 -->
+      <div class="md:w-1/2 p-6">
+        <h3 class="text-2xl font-semibold mb-4 text-center -mt-4">
+          NBMusic Centre LLC to Affinity Hair Academy
+        </h3>
+        <div style="position: relative; max-width: 100%; height: 450px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d4973.582184534778!2d-81.36432607601616!3d28.39397304657762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x88dd84166b4307cf%3A0xd746e843ad984ce4!2sNBMusic%20Centre!3m2!1d28.395597199999997!2d-81.3612313!4m5!1s0x88e77e78d25b4f8d%3A0x81500ccbb4ecce4c!2sAffinity%20Hair%20Academy%20School%20of%20Cosmetology%20%26%20Barber%2C%20South%20Orange%20Blossom%20Trail%2C%20Orlando%2C%20FL%2C%20USA!3m2!1d28.3869838!2d-81.402069!5e1!3m2!1sen!2s!4v1758781692277!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         
+<div style="position:absolute; top:100px; left:10px; background:rgba(255,255,0,0.7); padding:5px; z-index:10;">
+  <strong>GI Bill Hair Academy School in Orlando, FL</strong>
+</div>
+          
+          <!-- Button -->
+          <div style="position: absolute; bottom: 20px; left: 20px;">
+            <a href="https://maps.app.goo.gl/LeGYC8uBj5hEEmuaA" target="_blank" class="map-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="22" height="22" style="vertical-align:middle; margin-right:8px;">
+                <path fill="#4CAF50" d="M21 44.74V28.99h6v15.75l-3 2.25z"/>
+                <path fill="#81C784" d="M24 2L12 12h24z"/>
+                <path fill="#E53935" d="M12 12L24 2v10z"/>
+                <path fill="#1E88E5" d="M36 12L24 2v10z"/>
+                <path fill="#FBC02D" d="M24 22c-5.52 0-10-4.48-10-10S18.48 2 24 2s10 4.48 10 10-4.48 10-10 10z"/>
+              </svg>
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Content 5: Text Left, Image Right -->
+    <div class="flex flex-col md:flex-row items-center mb-12">
+      <div class="md:w-1/2 p-6">
+        <h3 class="text-2xl font-semibold mb-4 text-center -mt-4">
+          B&G Equipment and Supply to Affinity Hair Academy
+        </h3>
+        <div style="position: relative; max-width: 100%; height: 450px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d4973.1949734202!2d-81.36321871493111!3d28.402223878789727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x88e77d609244f7a7%3A0xc30a454e45f4b3dd!2sB%26G%20Equipment%20and%20Supply!3m2!1d28.4024276!2d-81.3623058!4m5!1s0x88e77e78d25b4f8d%3A0x81500ccbb4ecce4c!2sAffinity%20Hair%20Academy%20School%20of%20Cosmetology%20%26%20Barber%2C%20South%20Orange%20Blossom%20Trail%2C%20Orlando%2C%20FL%2C%20USA!3m2!1d28.3869838!2d-81.402069!5e1!3m2!1sen!2s!4v1758781720260!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         
+<div style="position:absolute; top:100px; left:10px; background:rgba(255,255,0,0.7); padding:5px; z-index:10;">
+  <strong>FAFSA Hair Academy in Orlando, FL</strong>
+</div>
+         
+          
+          <!-- Button -->
+          <div style="position: absolute; bottom: 20px; left: 20px;">
+            <a href="https://maps.app.goo.gl/8fEXFVyPK7u7TkJe8" target="_blank" class="map-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="22" height="22" style="vertical-align:middle; margin-right:8px;">
+                <path fill="#4CAF50" d="M21 44.74V28.99h6v15.75l-3 2.25z"/>
+                <path fill="#81C784" d="M24 2L12 12h24z"/>
+                <path fill="#E53935" d="M12 12L24 2v10z"/>
+                <path fill="#1E88E5" d="M36 12L24 2v10z"/>
+                <path fill="#FBC02D" d="M24 22c-5.52 0-10-4.48-10-10S18.48 2 24 2s10 4.48 10 10-4.48 10-10 10z"/>
+              </svg>
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content 2 -->
+      <div class="md:w-1/2 p-6">
+        <h3 class="text-2xl font-semibold mb-4 text-center -mt-4">
+          11432-11438 Co Rd 527 to Affinity Hair Academy
+        </h3>
+        <div style="position: relative; max-width: 100%; height: 450px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d4973.243053761294!2d-81.37583654988708!3d28.40119948525837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d28.4015246!2d-81.37662139999999!4m5!1s0x88e77e78d25b4f8d%3A0x81500ccbb4ecce4c!2sAffinity%20Hair%20Academy%20School%20of%20Cosmetology%20%26%20Barber%2C%20South%20Orange%20Blossom%20Trail%2C%20Orlando%2C%20FL%2C%20USA!3m2!1d28.3869838!2d-81.402069!5e1!3m2!1sen!2s!4v1758781750500!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         
+<div style="position:absolute; top:100px; left:10px; background:rgba(255,255,0,0.7); padding:5px; z-index:10;">
+  <strong>Veterans Hair Academy in Orlando, FL</strong>
+</div>
+          
+          <!-- Button -->
+          <div style="position: absolute; bottom: 20px; left: 20px;">
+            <a href="https://maps.app.goo.gl/FjqEQrLsT8HD3AZ5A" target="_blank" class="map-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="22" height="22" style="vertical-align:middle; margin-right:8px;">
+                <path fill="#4CAF50" d="M21 44.74V28.99h6v15.75l-3 2.25z"/>
+                <path fill="#81C784" d="M24 2L12 12h24z"/>
+                <path fill="#E53935" d="M12 12L24 2v10z"/>
+                <path fill="#1E88E5" d="M36 12L24 2v10z"/>
+                <path fill="#FBC02D" d="M24 22c-5.52 0-10-4.48-10-10S18.48 2 24 2s10 4.48 10 10-4.48 10-10 10z"/>
+              </svg>
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</section>
+
+
+
+
+    <!-- Content 3: -->
+      <div class="flex flex-col md:flex-row-reverse items-center mb-12">
+<div class="w-full p-6">
+  
+  <h3 class='text-2xl font-semibold mb-4'>Hands-On Training and Real Client Experience</h3>
+<p class="text-gray-800 mb-4">At Affinity Hair Academy Orlando, students gain invaluable hands-on cosmetology training by working directly with real Orlando beauty clients in a live salon clinic setting. This practical learning approach allows students to apply classroom knowledge in a professional environment, preparing them for the demands of the beauty industry. Under the guidance of experienced instructors, students perform a variety of services, from haircuts and coloring to styling and treatments, ensuring they develop well-rounded skills. The student salon services are designed to mimic a real salon experience, giving learners the confidence to interact with clients while refining their techniques. This immersive method bridges the gap between theory and real-world application, making education at Affinity Hair Academy both dynamic and effective.</p>
+<p class="text-gray-800 mb-4">The student salon at Affinity Hair Academy Orlando welcomes actual clients from the community, providing learners with the opportunity to work on diverse hair types and styles. This exposure to real-world scenarios helps students adapt to different client preferences and challenges, a crucial skill for any cosmetologist. Whether it’s mastering precision cuts or perfecting balayage techniques, students receive immediate feedback from both instructors and clients, fostering continuous improvement. The hands-on cosmetology training ensures that graduates leave with a portfolio of completed work, showcasing their ability to meet professional standards. Clients benefit from affordable services while students gain the confidence and competence needed to excel in their careers.</p>
+<p class="text-gray-800 mb-4">One of the standout features of Affinity Hair Academy’s practical learning model is the structured progression from observation to independent service execution. Students begin by assisting instructors and observing consultations before gradually taking on more responsibility. This step-by-step approach ensures they build a strong foundation before working directly with Orlando beauty clients. The academy’s supportive environment allows students to make mistakes and learn from them without the pressure of a traditional salon setting. By the time they complete their training, students are fully prepared to handle clients independently, making their transition into the workforce seamless.</p>
+<p class="text-gray-800 mb-4">Affinity Hair Academy Orlando emphasizes client interaction as a key component of its hands-on cosmetology training. Students learn not only technical skills but also how to conduct consultations, manage appointments, and provide excellent customer service. These soft skills are just as important as styling expertise when building a successful career in the beauty industry. The student salon services include everything from basic trims to advanced color corrections, giving learners exposure to a wide range of requests. Clients often return to the academy, creating a loyal customer base that helps students build relationships and refine their craft over time.</p>
+<p class="text-gray-800 mb-4">The real client experience at Affinity Hair Academy Orlando sets it apart from traditional cosmetology programs. Students graduate with a deep understanding of salon operations, from sanitation protocols to retail product recommendations, making them job-ready from day one. The hands-on training ensures they can handle the fast-paced nature of the industry while maintaining high standards of quality and professionalism. By working with Orlando beauty clients, students develop a reputation for excellence even before entering the workforce. This practical learning approach not only benefits students but also strengthens the local beauty community by producing skilled, confident stylists.</p>
+
+  
+        </div>
+      
+      </div>
+
+
+       <!-- Content 4: -->
+      <div class="flex flex-col md:flex-row-reverse items-center mb-12">
+<div class="w-full p-6">
+  
+  <h3 class='text-2xl font-semibold mb-4'>Financial Aid and Enrollment Options</h3>
+<p class="text-gray-800 mb-4">Affinity Hair Academy Orlando understands that pursuing a cosmetology education is an investment, and they offer multiple financial aid options to help students manage tuition costs. One of the primary resources is the Free Application for Federal Student Aid (FAFSA), which can determine eligibility for grants, loans, and work-study programs. Many students at Affinity Hair Academy qualify for federal Pell Grants, which do not require repayment, making education more accessible. The school’s financial aid advisors guide applicants through the FAFSA process, ensuring they maximize their funding opportunities. Whether you’re entering cosmetology for the first time or enhancing your skills, Affinity Hair Academy makes financial assistance straightforward.</p>
+<p class="text-gray-800 mb-4">For veterans and active-duty military personnel, Affinity Hair Academy proudly accepts the GI Bill®, allowing eligible students to apply their benefits toward tuition and related expenses. The school’s financial aid team assists veterans in navigating the VA certification process, ensuring a smooth transition into their cosmetology program. Alongside the GI Bill®, military spouses and dependents may also qualify for additional education benefits. Affinity Hair Academy Orlando is committed to supporting those who have served by providing flexible enrollment options tailored to their schedules. This dedication makes the academy a top choice for veterans seeking a career in the beauty industry.</p>
+<p class="text-gray-800 mb-4">In addition to federal aid and military benefits, Affinity Hair Academy offers customized payment plans to help break down tuition into manageable installments. These plans allow students to start their education without the immediate burden of a large payment. The academy works closely with each student to design a payment schedule that aligns with their financial situation, eliminating unnecessary stress. Whether paying in full or spreading costs over time, Affinity Hair Academy ensures affordability remains a priority. This flexibility makes it easier for aspiring cosmetologists to pursue their dreams without financial barriers.</p>
+<p class="text-gray-800 mb-4">Enrolling at Affinity Hair Academy is a seamless process designed for convenience and efficiency. Prospective students can visit the Orlando campus on S Orange Blossom Trl for a personalized tour and one-on-one consultation with an admissions advisor. During this meeting, they’ll discuss program options, financial aid eligibility, and career goals to create a tailored education plan. The academy’s enrollment team simplifies paperwork, from FAFSA submissions to payment plan agreements, so students can focus on their training. With dedicated support at every step, starting a cosmetology journey at Affinity Hair Academy is both straightforward and stress-free.</p>
+<p class="text-gray-800 mb-4">Affinity Hair Academy Orlando stands out by making financial aid and enrollment accessible to everyone, regardless of their financial background. From FAFSA assistance to military benefits and flexible payment options, the academy ensures students can invest in their future without unnecessary hurdles. The team’s hands-on approach demystifies the financial aid process, helping students secure the resources they need. Whether you’re exploring financial aid Orlando options or ready to begin student enrollment at Affinity Hair Academy, the academy’s supportive environment sets the stage for success. Taking the first step toward a rewarding beauty career has never been easier.</p>
+
+  
+        </div>
+      
+      </div>
+
+       <!-- Content 5: -->
+      <div class="flex flex-col md:flex-row-reverse items-center mb-12">
+<div class="w-full p-6">
+  
+  <h3 class='text-2xl font-semibold mb-4'>Career Growth and Alumni Success Stories</h3>
+<p class="text-gray-800 mb-4">Affinity Hair Academy Orlando has helped countless students launch successful careers in the beauty industry, with many graduates securing licensed cosmetologist jobs in Orlando and beyond. The academy’s hands-on training and industry connections provide students with the skills needed to excel in salons, spas, and even entrepreneurial ventures. Alumni often share stories of landing positions at high-end salons or working with celebrity clients, showcasing the real-world impact of their education. The academy’s focus on both technical expertise and business acumen ensures graduates are well-prepared for diverse career paths.</p>
+<p class="text-gray-800 mb-4">Many Affinity Hair Academy alumni have gone on to open their own salons, proving the program’s effectiveness in fostering salon entrepreneurship. The curriculum includes essential business training, such as client management, marketing, and financial planning, which gives graduates the confidence to build their own brands. Some former students now operate thriving beauty studios in Orlando, crediting the academy for teaching them how to balance creativity with business strategy. This entrepreneurial focus sets Affinity Hair Academy apart from other beauty schools in the area.</p>
+<p class="text-gray-800 mb-4">The beauty industry offers a wide range of career opportunities, and Affinity Hair Academy prepares students to take advantage of them. Graduates have found success in editorial styling, bridal hair design, and even teaching future cosmetologists. The academy’s strong network of industry professionals helps students connect with mentors and job openings, making the transition from student to professional seamless. Whether working in a luxury salon or freelancing, alumni consistently highlight the academy’s role in their career growth.</p>
+<p class="text-gray-800 mb-4">Success stories from Affinity Hair Academy Orlando often highlight the personalized support students receive throughout their education. Instructors work closely with each student to identify their strengths and career goals, tailoring guidance to help them succeed. Many alumni mention how this individualized approach helped them refine their skills and build a strong portfolio before entering the job market. This level of mentorship ensures graduates are not just trained but truly career-ready.</p>
+<p class="text-gray-800 mb-4">For those considering a future in cosmetology, Affinity Hair Academy’s track record speaks for itself. The academy’s graduates are a testament to the quality of education and the doors it can open in the beauty industry. From securing licensed cosmetologist jobs in Orlando to launching independent salons, alumni continue to make their mark. The combination of expert training, business knowledge, and industry connections makes Affinity Hair Academy a top choice for aspiring beauty professionals.</p>
+
+  
+        </div>
+      
+      </div>
+
+        <!-- Content 6: -->
+      <div class="flex flex-col md:flex-row-reverse items-center mb-12">
+<div class="w-full p-6">
+  
+  <h3 class='text-2xl font-semibold mb-4'>Why Orlando is the Perfect Place to Learn Cosmetology</h3>
+<p class="text-gray-800 mb-4">Orlando is an ideal city for aspiring cosmetologists because of its thriving beauty community and diverse clientele. The Orlando FL beauty community is known for its creativity and innovation, offering students exposure to the latest trends in hair, makeup, and skincare. At Affinity Hair Academy, students benefit from hands-on training in a city where salons, spas, and beauty events are always buzzing with new techniques and styles. The multicultural population also means students gain experience working with different hair textures and skin tones, preparing them for real-world client interactions. This dynamic environment ensures graduates are well-rounded professionals ready to excel in any setting.</p>
+<p class="text-gray-800 mb-4">Another advantage of studying cosmetology in Orlando is the strong career opportunities available after graduation. The city’s booming tourism industry and growing population create a steady demand for skilled beauty professionals. Orlando career opportunities range from high-end salons and resorts to film and television productions, giving graduates multiple paths to success. Affinity Hair Academy Orlando helps students build connections with local employers, ensuring they have a head start in the job market. With so many options, students can find a niche that aligns with their passion, whether it’s bridal styling, editorial work, or salon management.</p>
+<p class="text-gray-800 mb-4">Florida’s cosmetology license is recognized for its high standards, making it a valuable credential for professionals. The state’s licensing process ensures graduates are well-trained in sanitation, safety, and advanced techniques, giving them an edge in the industry. Affinity Hair Academy’s curriculum is designed to meet these rigorous requirements, providing students with the knowledge and skills needed to pass their exams confidently. Orlando’s central location also means students have easy access to testing centers and continuing education opportunities. By earning a Florida cosmetology license, graduates can work anywhere in the state or even transfer their credentials to other regions.</p>
+<p class="text-gray-800 mb-4">The central Florida education system supports cosmetology students with resources and networking opportunities that enhance their learning experience. Orlando is home to numerous beauty expos, workshops, and industry events where students can learn from top professionals. Affinity Hair Academy takes advantage of these opportunities by incorporating guest speakers and field trips into their programs. The city’s collaborative atmosphere encourages students to build relationships with mentors and peers, fostering long-term career growth. With so many educational benefits, Orlando provides an enriching environment for anyone pursuing a career in beauty.</p>
+<p class="text-gray-800 mb-4">Affinity Hair Academy Orlando stands out as a top choice for cosmetology education because of its commitment to student success in this vibrant city. The academy’s experienced instructors bring real-world expertise to the classroom, ensuring students receive practical, up-to-date training. Located on S Orange Blossom Trl, the school is conveniently situated near major salons and beauty retailers, giving students easy access to industry resources. Whether you’re looking to start your own business or join a prestigious salon, Orlando’s dynamic beauty scene offers endless possibilities. By choosing Affinity Hair Academy, students gain the skills, connections, and confidence needed to thrive in this exciting field.</p>
+
+  
+        </div>
+      
+      </div>
+
+
+
+</div>
+</section>
+
+  <!-- FAQs Section -->
+  <section id="faqs" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="space-y-6">
+ <!-- FAQs for Auto Detailing Services in Killeen, Texas -->
+<section class="faq-section space-y-4">
+  <div class="mb-8">
+<h3 class="text-2xl font-semibold mb-6">Frequently Asked Questions</h3>
+
+<details class="mb-4 bg-gray-50 p-6 rounded-lg border border-gray-200">
+  <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600 transition-colors duration-200">What types of cosmetology programs does Affinity Hair Academy in Orlando offer?</summary>
+  <div class="faq-content mt-4 text-gray-700 leading-relaxed">
+    <div>At our Orange Blossom Trail location, Affinity Hair Academy provides comprehensive programs in cosmetology, barbering, and esthetics. Each program is designed to give students hands-on training and the skills needed for licensing exams in Florida.</div>
+  </div>
+</details>
+            
+<details class="mb-4 bg-gray-50 p-6 rounded-lg border border-gray-200">
+  <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600 transition-colors duration-200">How much does tuition cost at Affinity Hair Academy?</summary>
+  <div class="faq-content mt-4 text-gray-700 leading-relaxed">
+    <div>Tuition varies depending on the program, but we offer flexible payment plans to help students manage costs. For exact pricing details, we encourage prospective students to visit our Orlando campus for a personalized consultation.</div>
+  </div>
+</details>
+            
+<details class="mb-4 bg-gray-50 p-6 rounded-lg border border-gray-200">
+  <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600 transition-colors duration-200">How long does it take to complete a cosmetology program at Affinity Hair Academy?</summary>
+  <div class="faq-content mt-4 text-gray-700 leading-relaxed">
+    <div>Our full-time cosmetology program typically takes about 12 months to complete, while part-time options are available for those needing a more flexible schedule. Program length depends on state-required hours and individual progress.</div>
+  </div>
+</details>
+            
+<details class="mb-4 bg-gray-50 p-6 rounded-lg border border-gray-200">
+  <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600 transition-colors duration-200">Are there job placement services available after graduation?</summary>
+  <div class="faq-content mt-4 text-gray-700 leading-relaxed">
+    <div>Yes, Affinity Hair Academy offers career support, including job placement assistance and resume-building workshops. Our Orlando location has strong connections with local salons and spas to help graduates launch their careers.</div>
+  </div>
+</details>
+            
+<details class="mb-4 bg-gray-50 p-6 rounded-lg border border-gray-200">
+  <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600 transition-colors duration-200">Can I get a haircut or other services at your Orlando academy?</summary>
+  <div class="faq-content mt-4 text-gray-700 leading-relaxed">
+    <div>Absolutely! Our student salon provides affordable services like haircuts, coloring, and facials under professional supervision. It’s a great way for students to practice while offering quality services to the Orlando community. Walk-ins are welcome on Orange Blossom Trail.</div>
+  </div>
+</details>
+            </div>
+
+
+</section>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+ <!-- Map Section -->
+
+<section id="map" class="py-20 bg-white">
+    
+      <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">Find Us</h2>
+
+<div style="position: relative; max-width: 95%; height: 400px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+<!-- IF_MAP_START -->
+<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5265.103502316845!2d-81.402069!3d28.386983800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77e78d25b4f8d%3A0x81500ccbb4ecce4c!2sAffinity%20Hair%20Academy%20School%20of%20Cosmetology%20%26%20Barber!5e1!3m2!1sen!2s!4v1758989779778!5m2!1sen!2s' width='1300' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>
+<!-- IF_MAP_END -->
+   
+
+</div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Contact Us -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+        <p class="text-gray-400 mb-2">12313 S Orange Blossom Trl, Orlando, FL 32837	</p>
+  
+          <p class="text-gray-400">Phone: <a href="tel:+1 407-613-5972">+1 407-613-5972</a></p>
+              <p class="text-gray-400"><a href="http://affinityhairacademy.com" class="text-gray-400 hover:text-white" rel="Nofollow">http://affinityhairacademy.com</a></p>    
+              <ul class="space-y-2">
+<li><a href="https://affinityhairacademy.vercel.app/sitemap.xml">sitemap</a></li>  
+<li><a href="https://affinityhairacademy.vercel.app/sitemap.html">sitemap</a></li>  
+
+
+</ul>
+
+        </div>
+        <!-- Important Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Important Links</h3>
+          <ul class="space-y-2">
+<li><a href="https://affinityhairacademy.vercel.app" class="text-blue-600 hover:underline">Best cosmetology school in Orlando, FL</a></li>
+<li><a href="https://affinityhairacademy.s3.eu-north-1.amazonaws.com/index.html" class="text-blue-600 hover:underline">cosmetology school</a></li>
+<li><a href="https://affinityhairacademy.pages.dev" class="text-blue-600 hover:underline">Gi bill cosmetology school in Orlando, FL</a></li>
+<li><a href="https://affinityhairacademy.s3.us-east-005.backblazeb2.com/" class="text-blue-600 hover:underline">Gi bill cosmetology school in Orlando, FL</a></li>
+<li><a href="https://affinityhairacademy-63652c.gitlab.io/" class="text-blue-600 hover:underline">Veterans cosmetology school in Orlando, FL</a></li>
+<li><a href="https://affinityhairacademy.github.io/affinityhairacademy/" class="text-blue-600 hover:underline">Best cosmetology school in Orlando, FL</a></li>
+<li><a href="https://affinityhairacademy.netlify.app/" class="text-blue-600 hover:underline">cosmetology school in Orlando, FL</a></li>
+<li><a href="https://sites.google.com/view/bestcosmetologyschoolinorlando/home" class="text-blue-600 hover:underline">Gsite</a></li>
+          </ul>
+        </div>
+        <!-- Social Media -->
+   
+
+      </div>
+      <div class="mt-8 text-center">
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
